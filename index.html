@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/script.js"></script>
+    <title>game</title>
+  </head>
+  <body>
+    <header><h1>BALL SORT GAME</h1></header>
+    <main>
+      <form id="form">
+        <label for="number"
+          >Please enter the number of colors from 3 to 9</label
+        >
+        <div class="formWrapper">
+          <input
+            type="number"
+            min="3"
+            max="9"
+            id="number"
+            name="number"
+            placeholder="3"
+          />
+          <button type="submit">Start</button>
+        </div>
+      </form>
+      <div class="jar-container"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

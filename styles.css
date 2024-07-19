@@ -1,0 +1,197 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #eff0eb;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 40px;
+  padding: 10px;
+}
+
+#number {
+  text-align: center;
+  width: 100px;
+}
+
+#number::-webkit-outer-spin-button,
+#number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#number:focus {
+  outline: 1px solid #70706e;
+  border-radius: 2px;
+}
+
+.error {
+  border-color: rgb(177, 0, 0);
+  text-align: center;
+}
+
+.jar-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#formWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 100px;
+}
+
+label {
+  display: block;
+  padding: 15px;
+}
+
+.jar {
+  width: 50px;
+  height: 180px;
+  border: 2px solid black;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 3px;
+  margin: 60px 10px 0 10px;
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffff87;
+}
+
+.color1 {
+  background-color: #9ba67c;
+}
+
+.color2 {
+  background-color: #a6736c;
+}
+
+.color3 {
+  background-color: #8d96a6;
+}
+
+.color4 {
+  background-color: #664842;
+}
+
+.color5 {
+  background-color: #384866;
+}
+
+.color6 {
+  background-color: #5e664d;
+}
+
+.color7 {
+  background-color: #cedbf2;
+}
+
+.color8 {
+  background-color: #e1f2b6;
+}
+
+.color9 {
+  background-color: #f2a99d;
+}
+
+.fullJar {
+  background-color: #fbfcf7;
+  border-top: 2px solid black;
+  border-radius: 6px;
+  transition: color linear 0.3s;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+.congrats {
+  color: #9ba67c;
+  padding-top: 20px;
+  font-size: 40px;
+}
